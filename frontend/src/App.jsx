@@ -23,7 +23,7 @@ const [review, setReview] = useState(``);
   }, []);
 
   async function reviewCode(code) {
-     const response = await axios.post('http://localhost:3000/ai/get-review', { code });
+     const response = await axios.post('https://syntax-sage-aigy.onrender.com', { code });
      setReview(response.data);
   } 
 
